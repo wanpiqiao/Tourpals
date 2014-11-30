@@ -1,0 +1,330 @@
+
+/* reset */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,dl,dt,dd,ol,nav ul,nav li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {display: block;}
+ol,ul{list-style:none;margin:0;padding:0;}
+blockquote,q{quotes:none;}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
+table{border-collapse:collapse;border-spacing:0;}
+/* start editing from here */
+a{text-decoration:none;}
+.txt-rt{text-align:right;}/* text align right */
+.txt-lt{text-align:left;}/* text align left */
+.txt-center{text-align:center;}/* text align center */
+.float-rt{float:right;}/* float right */
+.float-lt{float:left;}/* float left */
+.clear{clear:both;}/* clear float */
+.pos-relative{position:relative;}/* Position Relative */
+.pos-absolute{position:absolute;}/* Position Absolute */
+.vertical-base{	vertical-align:baseline;}/* vertical align baseline */
+.vertical-top{	vertical-align:top;}/* vertical align top */
+.underline{	padding-bottom:5px;	border-bottom: 1px solid #eee; margin:0 0 20px 0;}/* Add 5px bottom padding and a underline */
+nav.vertical ul li{	display:block;}/* vertical menu */
+nav.horizontal ul li{	display: inline-block;}/* horizontal menu */
+img{max-width:100%;}
+/*end reset*/
+body {
+	background:#ffffff;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 100%;
+}
+.wrap{
+	margin:0 auto;
+	width:80%;
+}
+.banner
+{
+	background: url(../images/banner.jpg);
+	background-size: cover;
+	padding:4em 0em 11em 0em;
+}
+.logo
+{
+	text-align: center;
+	margin: 0 auto;
+	width:23%;
+}
+.logo a{
+	display:block;
+}
+.banner p{
+	color:#fff;
+	text-transform: uppercase;
+	font-size: 3em;
+	text-align: center;
+	padding: 1em 0em 2em 0em;
+}
+.banner p span{
+	font-weight: 900;
+	margin-left: 10px;
+	font-size: 1.03em;
+}
+/* start booking_room */
+.searching{
+	margin-top: -210px;
+}
+
+.form-horizontal1 .control-label,.form-horizontal1 .radio,.form-horizontal1 .checkbox,.form-horizontal1 .radio-inline,.form-horizontal1 .checkbox-inline
+{
+	padding-top:7px;
+	margin-top:0;
+	margin-bottom:0
+}
+.form-horizontal1 .form-group
+{
+	margin-right:-15px;
+	margin-left:-15px
+}
+.form-horizontal1 .form-group:before,.form-horizontal1 .form-group:after{display:table;content:" "}
+.form-horizontal1 .form-group:after{clear:both}
+.form-horizontal1 .form-group:before,.form-horizontal1 .form-group:after{display:table;content:" "}
+.form-horizontal1 .form-group:after{clear:both}
+.form-horizontal1 .form-control-static{padding-top:7px}
+/****************start-suggetion-code************/
+/* Layout helpers
+----------------------------------*/
+.subfooter{
+	background: #2C3E50;
+	border-top: 1px solid #394C5F;
+	text-align: center;
+	padding: 1.5em 0 2em;
+	position:relative;
+}
+.subfooter ul li{
+	display:inline-block;
+}
+.subfooter ul li span{
+	color: #FFF;
+	margin: 0 0.5em 0;
+}
+.subfooter ul li a{
+	color: #FFF;
+	transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-o-transition: 0.5s all;
+	font-size: 1em;
+}
+.subfooter ul li a:hover{
+	color:#1DF;
+}
+
+/* Component containers
+----------------------------------*/
+.ui-widget {
+	font-size: 1.1em;
+}
+.ui-widget .ui-widget {
+	font-size: 1em;
+}
+.ui-widget input,
+.ui-widget select,
+.ui-widget textarea,
+.ui-widget button {
+	font-size: 1em;
+}
+
+
+/* Interaction states
+----------------------------------*/
+
+/****/
+.ui-widget{
+	border:1px solid #E4E4E4;
+   -webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+	padding:5px 10px;
+	cursor: pointer;
+	margin: 0em 2em;
+}
+.ui-widget input[type="text"] {
+	border: none;
+	outline: none;
+	background: none;
+	font-size: 0.95em;
+	color: #938E8E;
+	width: 100%;
+	font-family: 'Open Sans', sans-serif;
+	-webkit-appearance:none;
+	padding: 0.4em 0em;
+	font-size: 1.4em;
+}
+/****************end-suggetion-code************/
+.main1
+{
+	position:relative;
+	background: #fff;
+	width:360px;
+	margin: 0 auto;
+	padding: 1em 0em;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-o-border-radius: 3px;
+	-moz-border-radius: 3px;
+	box-shadow: 0px 0px 4px 0px #5E5E5E;
+}
+.searching p
+{
+	color:#938E8E;
+	font-size:0.95em;
+	text-align: center;
+	padding: 0em 1em;
+	line-height: 1.8em;
+}
+
+
+
+/**********responsive************/
+@media only screen and (max-width:1440px)
+{
+	.group_2 {
+	padding: 24em 0em 6em 0em;
+	}
+}
+@media only screen and (max-width:1366px)
+{
+	.wrap {
+	width: 85%;
+	}
+
+@media only screen and (max-width:1280px)
+{
+	.banner p {
+	font-size: 2.7em;
+	}
+
+	.logo
+	{
+	width:22%;
+	}
+	
+}
+@media only screen and (max-width:1024px)
+{
+	.logo
+	{
+	width:24%;
+	}
+	.banner {
+	padding: 3em 0em 11em 0em;
+	}
+	.banner p {
+	font-size: 2.3em;
+	padding: 1em 0em 1.8em 0em;
+	}
+
+}
+@media only screen and (max-width:768px)
+{
+	.logo
+	{
+	width:28%;
+	}
+	.wrap
+	{
+		width:90%;
+	}
+	.banner {
+	padding: 2em 0em 11em 0em;
+	}
+	.banner p {
+	font-size: 2em;
+	}
+	.ui-widget input[type="text"] {
+	font-size: 1.2em;
+	}
+	.form-horizontal1 input{
+	font-size: 1.2em;
+	padding: 0.2em 0em;
+	}
+	.form-horizontal1 {
+	margin: 0em 1em;
+	}
+
+}
+@media only screen and (max-width:640px)
+{
+	.logo
+	{
+	width:32%;
+	}
+	.banner p {
+	font-size: 1.5em;
+	padding: 1em 0em 2.2em 0em;
+	}
+
+	.ui-widget input[type="text"] {
+	font-size: 1em;
+	}
+	.form-horizontal1 input {
+	font-size: 1em;
+
+	padding: 0.2em 0em;
+	}
+	.form-horizontal1 {
+	margin: 0em 1em;
+	}
+
+	.main1 {
+	width: 288px;
+	}
+
+}
+@media only screen and (max-width:480px)
+{
+	.logo
+	{
+	width:32%;
+	}
+	.form-horizontal1 input{
+	font-size: 0.9em;
+	padding: 0.3em 0em;
+	}
+	.form-horizontal1 {
+	margin: 0em 1em;
+	}
+
+}
+@media only screen and (max-width:320px)
+{
+	.logo {
+	width:40%;
+	}
+	.banner {
+	padding: 1em 0em 11em 0em;
+	}
+	.banner p {
+	font-size: 1.5em;
+	padding: 0.6em 0em 2.8em 0em;
+	}
+
+	.banner p {
+	font-size: 1.1em;
+	}
+	.main1 {
+	width: 216px;
+	}
+
+	.ui-widget input[type="text"] {
+	font-size: 0.8em;
+	padding: 0.2em 0em;
+	}
+	.ui-widget {
+	margin: 0em 1em;
+	}
+
+	.form-horizontal1 input{
+	font-size: 0.8em;
+	padding: 0.2em 0em;
+	}
+	.form-horizontal1 {
+	margin: 0em 1em;
+	}
+	.searching p {
+	font-size: 0.9em;
+	padding: 0em 0.5em;
+	}
+
+}
