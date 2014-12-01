@@ -52,7 +52,7 @@
           <ul class="nav navbar-nav navbar-right">
             <form class="navbar-form navbar-left" role="search">
             <div class="form-group">
-              <input type="text" class="form-control" value="Search" />
+               <input type="text" class="form-control" value="Search" onfocus="if (this.value == 'Search') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Search';}" />
             </div> <button type="submit" class="btn btn-default">Submit</button>
           </form>
  
@@ -82,29 +82,70 @@
       </nav>
       <h1><br></h1>
       <div class="row clearfix">
-        <div class="col-md-2 column">
+        <div class="row clearfix">
+        <div class="col-md-3 column">
+          <img alt="140x140" src="img/photo.png" class="img-rounded" />
+          <button>type="edit" class="btn btn-default">Edit</button>
+
         </div>
         <div class="col-md-6 column">
           <form role="form">
             <div class="form-group">
-               <label for="exampleInputEmail1">Email address</label><input type="email" class="form-control" id="exampleInputEmail1" />
+               <label for="uid">Username</label>
+
             </div>
             <div class="form-group">
-               <label for="exampleInputPassword1">Password</label><input type="password" class="form-control" id="exampleInputPassword1" />
+                        <label class="exampleInputEmail1">
+                          E-mail address
+                        </label>
             </div>
             <div class="form-group">
+               <label for="exampleInputFname1">First Name</label>
+
+            </div>
+            <div class="form-group">
+               <label for="exampleInputLname1">Last Name</label>
+
+            </div>
+
+            <div class="form-group">
+               <label for="exampleInputPassword1">Password</label>
+
+            </div>
+            <div class="form-group">
+                <label for="gender">Gender</label>
+                
+
+             </div>
+            <div class="form-group">
+               <label for="exampleInputAge1">Age</label>
+            </div>
+             <div class="form-group">
+               <label for="exampleInputStreet1">Street</label>
+            </div>
+            <div class="form-group">
+               <label for="exampleInputCity1">City</label>
+            </div>
+            <div class="form-group">
+                <label for="State">State</label>
+                
+              </div>
+            <div class="form-group">
+               <label for="exampleInputZip1">Zip Code</label>
+            </div>
+          <!--  <div class="form-group">
                <label for="exampleInputFile">File input</label><input type="file" id="exampleInputFile" />
               <p class="help-block">
                 Example block-level help text here.
               </p>
-            </div>
-            <div class="checkbox">
-               <label><input type="checkbox" /> Check me out</label>
-            </div> <button type="submit" class="btn btn-default">Submit</button>
+            </div>-->
+            <button>type="edit" class="btn btn-default">Edit</button>
           </form>
         </div>
-        <div class="col-md-4 column">
+        <div class="col-md-3 column">
         </div>
+      </div>
+
       </div>
     </div>
   </div>
