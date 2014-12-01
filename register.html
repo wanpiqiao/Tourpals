@@ -1,20 +1,20 @@
-
-<!DOCTYPE html>
-<html lang="en">
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Tourpals</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="">
-  <meta name="author" content="">
+  <title>Tourpals - Register</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
 
   <!--link rel="stylesheet/less" href="less/bootstrap.less" type="text/css" /-->
   <!--link rel="stylesheet/less" href="less/responsive.less" type="text/css" /-->
   <!--script src="js/less-1.3.3.min.js"></script-->
   <!--append ‘#!watch’ to the browser URL, then refresh the page. -->
   
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet" />
 
   <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
   <!--[if lt IE 9]>
@@ -24,9 +24,9 @@
   <!-- Fav and touch icons -->
   
   
-  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="js/scripts.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
 </head>
 
 <body>
@@ -68,59 +68,59 @@
         <div class="col-md-3 column">
         </div>
         <div class="col-md-6 column">
-          <form role="form">
+          <div role="form">
             <div class="form-group">
-               <label for="exampleInputEmail1">Email address</label><input type="email" class="form-control" id="exampleInputEmail1" />
+               <label for="uid">Username</label><input type="text" class="form-control" id="uid" />
             </div>
             <div class="form-group">
-               <label for="exampleInputFname1">First Name</label><input type="text" class="form-control" id="exampleInputFname1" />
+               <label for="email">Email address</label><input type="email" class="form-control" id="email" />
             </div>
             <div class="form-group">
-               <label for="exampleInputLname1">Last Name</label><input type="text" class="form-control" id="exampleInputLname1" />
+               <label for="fname">First Name</label><input type="text" class="form-control" id="fname" />
+            </div>
+            <div class="form-group">
+               <label for="lname">Last Name</label><input type="text" class="form-control" id="lname" />
             </div>
 
             <div class="form-group">
-               <label for="exampleInputPassword1">Password</label><input type="password" class="form-control" id="exampleInputPassword1" />
+               <label for="password">Password</label><input type="password" class="form-control" id="password" />
             </div>
             <div class="form-group">
                 <label for="gender">Gender</label>
-                <select id="gender" name="gender" onchange="change_gender(this.value)" class="form-control">
-                  <option value="null">Gender</option>         
+                <select id="gender" name="gender" class="form-control">    
+                  <!--<option value="null">Gender</option>-->
                   <option value="F">Female</option>
                   <option value="M">Male</option>
                 </select>
              </div>
             <div class="form-group">
-               <label for="exampleInputAge1">Age</label><input type="text" class="form-control" id="exampleInputAge1" />
-            </div>
-             <div class="form-group">
-               <label for="exampleInputStreet1">Street</label><input type="text" class="form-control" id="exampleInputStreet1" />
+               <label for="age">Age</label><input type="text" class="form-control" id="age" />
             </div>
             <div class="form-group">
-               <label for="exampleInputCity1">City</label><input type="text" class="form-control" id="exampleInputCity1" />
+               <label for="street">Street</label><input type="text" class="form-control" id="street" />
             </div>
             <div class="form-group">
-                <label for="State">State</label>
-                <select id="State" name="State" onchange="change_state(this.value)" class="form-control">
-                    <option value="null">Select a State</option>         
+               <label for="city">City</label><input type="text" class="form-control" id="city" />
+            </div>
+            <div class="form-group">
+                <label for="state">State</label>
+                <select id="state" name="State" onchange="change_state(this.value)" class="form-control">
+                    <!--<option value="null">Select a State</option>-->       
                     <!--<select name="state" id="state" class="shipp-state medSel selectWidth valid"> <option value="">Select</option>-->
-                      <option value="AA">AA</option><option value="AE">AE</option><option value="AP">AP</option><option value="AL">AL</option><option value="AK">AK</option><option value="AZ">AZ</option><option value="AR">AR</option><option value="CA">CA</option><option value="CO">CO</option><option value="CT">CT</option><option value="DC">DC</option><option value="DE">DE</option><option value="FL">FL</option><option value="GA">GA</option><option value="HI">HI</option><option value="ID">ID</option><option value="IL">IL</option><option value="IN">IN</option><option value="IA">IA</option><option value="KS">KS</option><option value="KY">KY</option><option value="LA">LA</option><option value="ME">ME</option><option value="MD">MD</option><option value="MA">MA</option><option value="MI">MI</option><option value="MN">MN</option><option value="MS">MS</option><option value="MO">MO</option><option value="MT">MT</option><option value="NE">NE</option><option value="NV">NV</option><option value="NH">NH</option><option value="NJ">NJ</option><option value="NM">NM</option><option value="NY">NY</option><option value="NC">NC</option><option value="ND">ND</option><option value="OH">OH</option><option value="OK">OK</option><option value="OR">OR</option><option value="PA">PA</option><option value="PR">PR</option><option value="RI">RI</option><option value="SC">SC</option><option value="SD">SD</option><option value="TN">TN</option><option value="TX">TX</option><option value="UT">UT</option><option value="VT">VT</option><option value="VA">VA</option><option value="WA">WA</option><option value="WV">WV</option><option value="WI">WI</option><option value="WY">WY</option></select>
-                    
+                    <option value="AA">AA</option><option value="AE">AE</option><option value="AP">AP</option><option value="AL">AL</option><option value="AK">AK</option><option value="AZ">AZ</option><option value="AR">AR</option><option value="CA">CA</option><option value="CO">CO</option><option value="CT">CT</option><option value="DC">DC</option><option value="DE">DE</option><option value="FL">FL</option><option value="GA">GA</option><option value="HI">HI</option><option value="ID">ID</option><option value="IL">IL</option><option value="IN">IN</option><option value="IA">IA</option><option value="KS">KS</option><option value="KY">KY</option><option value="LA">LA</option><option value="ME">ME</option><option value="MD">MD</option><option value="MA">MA</option><option value="MI">MI</option><option value="MN">MN</option><option value="MS">MS</option><option value="MO">MO</option><option value="MT">MT</option><option value="NE">NE</option><option value="NV">NV</option><option value="NH">NH</option><option value="NJ">NJ</option><option value="NM">NM</option><option value="NY">NY</option><option value="NC">NC</option><option value="ND">ND</option><option value="OH">OH</option><option value="OK">OK</option><option value="OR">OR</option><option value="PA">PA</option><option value="PR">PR</option><option value="RI">RI</option><option value="SC">SC</option><option value="SD">SD</option><option value="TN">TN</option><option value="TX">TX</option><option value="UT">UT</option><option value="VT">VT</option><option value="VA">VA</option><option value="WA">WA</option><option value="WV">WV</option><option value="WI">WI</option><option value="WY">WY</option></select>  
                  </select>
               </div>
             <div class="form-group">
-               <label for="exampleInputZip1">Zip Code</label><input type="text" class="form-control" id="exampleInputZip1" />
+               <label for="zip">Zip Code</label><input type="text" class="form-control" id="zip" />
             </div>
-            <div class="form-group">
+            <!--<div class="form-group">
                <label for="exampleInputFile">File input</label><input type="file" id="exampleInputFile" />
               <p class="help-block">
                 Example block-level help text here.
               </p>
-            </div>
-            <button type="submit" class="btn btn-default">Submit</button>
-          </form>
-        </div>
-        <div class="col-md-3 column">
+            </div>-->
+            <button id="submit" class="btn btn-default">Submit</button>
+          </div>
         </div>
       </div>
     </div>
