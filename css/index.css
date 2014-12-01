@@ -59,16 +59,20 @@ body {
 	margin-left: 10px;
 	font-size: 1.03em;
 }
-/* start booking_room */
+
 .searching{
-	margin-top: -210px;
+	margin-top: -13em;
 }
 
 .form-horizontal1 .control-label,.form-horizontal1 .radio,.form-horizontal1 .checkbox,.form-horizontal1 .radio-inline,.form-horizontal1 .checkbox-inline
 {
 	padding-top:7px;
 	margin-top:0;
-	margin-bottom:0
+	margin-bottom:0;      
+}
+.control-label{
+        margin-left:6%;
+        color: #938E8E;
 }
 .form-horizontal1 .form-group
 {
@@ -80,9 +84,7 @@ body {
 .form-horizontal1 .form-group:before,.form-horizontal1 .form-group:after{display:table;content:" "}
 .form-horizontal1 .form-group:after{clear:both}
 .form-horizontal1 .form-control-static{padding-top:7px}
-/****************start-suggetion-code************/
-/* Layout helpers
-----------------------------------*/
+
 .subfooter{
 	background: #2C3E50;
 	border-top: 1px solid #394C5F;
@@ -109,8 +111,6 @@ body {
 	color:#1DF;
 }
 
-/* Component containers
-----------------------------------*/
 .ui-widget {
 	font-size: 1.1em;
 }
@@ -124,11 +124,6 @@ body {
 	font-size: 1em;
 }
 
-
-/* Interaction states
-----------------------------------*/
-
-/****/
 .ui-widget{
 	border:1px solid #E4E4E4;
    -webkit-transition: all 0.3s ease;
@@ -151,14 +146,15 @@ body {
 	padding: 0.4em 0em;
 	font-size: 1.4em;
 }
-/****************end-suggetion-code************/
+
 .main1
 {
 	position:relative;
 	background: #fff;
 	width:360px;
 	margin: 0 auto;
-	padding: 1em 0em;
+	padding-top: 2em;
+        padding-bottom: 1em;
 	border-radius: 3px;
 	-webkit-border-radius: 3px;
 	-o-border-radius: 3px;
@@ -173,8 +169,6 @@ body {
 	padding: 0em 1em;
 	line-height: 1.8em;
 }
-
-
 
 /**********responsive************/
 @media only screen and (max-width:1440px)
