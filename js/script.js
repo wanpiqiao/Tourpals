@@ -90,4 +90,47 @@ $(document).ready(function(){
             }
         });
     }
+    
+    if(document.getElementById('editProfile')){
+        $.ajax({
+            type: "GET",
+            url: "ViewProfile",
+            data: {},
+            dataType: "json",
+            success: function(data){
+                $('#email').val(data.email);
+                $('#fname').val(data.fname);
+                $('#lname').val(data.lname);
+                $('#password').val(data.password);
+                $('#gender').val(data.gender);
+                $('#age').val(data.age);
+                $('#street').val(data.street);
+                $('#city').val(data.city);
+                $('#state').val(data.state);
+                $('#zip').val(data.zip);
+            }
+        });
+        $(document).on('click','#submit',function(){
+            if(docheck()){
+                $.ajax({
+                    type: "GET",
+                    url: "UpdateProfile",
+                    data: {password: $('#password').val(),email:$('#email').val(),
+                           gender:$('#gender').val(),lname:$('#lname').val(),fname:$('#fname').val(),
+                           age:$('#age').val(),street:$('#street').val(),city:$('#city').val(),
+                           zip:$('#zip').val(),state:$('#state').val(),country:"U.S."},
+                    dataType: "json",
+                    success: function(data){
+                        if(data.flag==true)
+                            alert(data.flag);
+                            //window.location.href='index.html';
+                        else{
+                            bootbox.alert(data.flag);
+                        }
+                    }
+                });
+            }
+        });
+    }
+    
 });
