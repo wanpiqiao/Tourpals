@@ -1,67 +1,57 @@
-
-<!DOCTYPE HTML>
-<html>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-<title>Tourpals</title>
+<title>Tourpals - index</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 <link href="css/index.css" rel="stylesheet" type="text/css" media="all" />
-<link href="css/bootstrap.min.css" rel="stylesheet">
-	
-
-	<script type="text/javascript" src="js/jquery.min.js"></script>
-	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="js/scripts.js"></script>
+<link href="css/bootstrap.min.css" rel="stylesheet" />
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/bootbox.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
 </head>
 <body>
-	<div class="banner">
-		<div class="wrap">
-			<div class="logo">
-				<a href="index.html"><img src="images/logo.png"></a>
+    <div id="index"></div>
+    <div class="banner">
+	<div class="wrap">
+            <div class="logo">
+		<a href="index.html"><img src="images/logo.png" /></a>
+            </div>
+            <p>be sure you put your feet <br /> <span>in the right place</span></p>
+        </div>
+    </div>
+    <div class="content">
+	<div class="wrap">
+            <div class="searching">
+		<div class="main1">
+                    <div class="form-horizontal1">				
+			<div class="form-group">
+                            <label class="col-sm-3 control-label">Username:</label>
+                            <div class="col-sm-7">
+                                <input type="text" class="form-control" id="uid"  />
+                            </div>
+                        </div>
+			<div class="form-group">
+                            <label class="col-sm-3 control-label">Password:</label>
+                            <div class="col-sm-7">
+				<input type="password" class="form-control" id="password" />
+                            </div>
 			</div>
-			<p>be sure you put your feet </br> <span>in the right place</span></p>
+			<div class="form-group">						
+                            <div class="col-sm-offset-5 col-sm-3" style="margin-left:38%">
+                                <button id="login" class="btn btn-default">Sign in</button>
+                            </div>
+			</div>
+                    </div>
+                    <p><a href="register.html">Do not have an account? Register!</a></p>
 		</div>
+            </div>		
 	</div>
-	<div class="content">
-		<div class="wrap">
-			<div class="searching">
-				<div class="main1">
-					
-							<form class="form-horizontal1" role="form">
-								
-
-								<div class="form-group">
-									 <label for="inputEmail3" class="col-sm-1 control-label"></label>
-									<div class="col-sm-10">
-										<input type="email" class="form-control" id="inputEmail3" value="E-mail" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Your account';}">
-									</div>
-								</div>
-								<div class="form-group">
-									 <label for="inputPassword3" class="col-sm-1 control-label"></label>
-									<div class="col-sm-10">
-										<input type="password" class="form-control" id="inputPassword3" value="Password" onfocus="this.value = '';" >
-									</div>
-								</div>
-								<div class="form-group">
-									<div class="col-sm-offset-1 col-sm-6">
-										<div class="checkbox">
-											 <label><input type="checkbox"> Remember me</label>
-										</div>
-									</div>
-									<div class="col-sm-offset-1 col-sm-3">
-										 <button type="submit" class="btn btn-default">Sign in</button>
-									</div>
-								</div>
-								<div class="form-group">
-									
-								</div>
-							</form>
-					<p><a href="register.html">Have no account? Register!</a></p>
-				</div>
-			</div>		
-		</div>
-	</div>
-		<div class="subfooter">
+    </div>
+		<!--<div class="subfooter">
 			<div class="wrap">
 				<ul>
 					<li><a href="index.html">Home</a><span>::</span></li>
@@ -75,8 +65,6 @@
 				</ul>
 				
 			</div>
-		</div>
-
-
-</body>
+		</div>-->
+    </body>
 </html>
