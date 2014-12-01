@@ -3,6 +3,11 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+/**
+ *
+ * @author wanger
+ */
+
 function chkEmail(str) {   
     return str.search(/[\w\-]{1,}@[\w\-]{1,}\.[\w\-]{1,}/)==0?true:false 
 } //regular expression comes from http://www.jb51.net/article/19801.htm
@@ -64,6 +69,7 @@ $(document).ready(function(){
     if(document.getElementById('register')){
         $(document).on('click','#submit',function(){
             if(docheck()){
+                waitingDialog.show('Working hard', {dialogSize: 'sm'});
                 $.ajax({
                     type: "GET",
                     url: "Register",
@@ -76,6 +82,7 @@ $(document).ready(function(){
                         if(data.flag==true)
                             window.location.href='index.html';
                         else{
+                            myApp.hidePleaseWait();
                             bootbox.alert(data.message);
                         }
                     }
