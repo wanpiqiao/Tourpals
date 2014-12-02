@@ -31,6 +31,7 @@
 </head>
 
 <body>
+<div id="viewProfile"></div>
 <div class="container">
   <div class="row clearfix">
     <div class="col-md-12 column">
@@ -87,10 +88,9 @@
            <div class="col-md-1 column">
         </div>
         <div class="col-md-3 column">
-          <img alt="face" width=75% height=75% src="images/Face.svg" class="img-rounded center-block" />
+          <img alt="face" width="200" height="200" src="images/photos/Face.svg" class="img-rounded center-block" />
           <br/>
-          <button type="button" class="btn btn-default center-block" >Edit</button>
-
+          <button type="button" id="photochange" class="btn btn-default center-block">Change Photo</button>
         </div>
         <div class="col-md-6 column">
           <div class="table-responsive">
@@ -100,55 +100,55 @@
               <thead>
                 <tr>
                   <th>Username</th>
-                  <th>Defaultttttttttttttttt</th>
+                  <th><span id="uid"></span></th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
                   <td>E-mail address</td>
-                  <td>Default</td>
+                  <td><span id="email"></span></td>
                 </tr>
                 <tr>
                   <td>First Name</td>
-                  <td>Default</td>
+                  <td><span id="fname"></span></td>
                 </tr> 
                 <tr>
                   <td>Last Name</td>
-                  <td>Default</td>
+                  <td><span id="lname"></span></td>
                 </tr>
                 <tr>
                   <td>Password</td>
-                  <td>Default</td>
+                  <td><span id="password"></span></td>
                 </tr>
                 <tr>
                   <td>Gender</td>
-                  <td>Default</td>
+                  <td><span id="gender"></span></td>
                 </tr>
                 <tr>
                   <td>Age</td>
-                  <td>Default</td>
+                  <td><span id="age"></span></td>
                 </tr>
                 <tr>
                   <td>Street</td>
-                  <td>Default</td>
+                  <td><span id="street"></span></td>
                 </tr>
                 <tr>
                   <td> City</td>
-                  <td>Default</td>
+                  <td><span id="city"></span></td>
                 </tr>
                 <tr>
                   <td>State</td>
-                  <td>Default</td>
+                  <td><span id="state"></span></td>
                 </tr>
                 <tr>
                   <td>Zip Code</td>
-                  <td> Default</td>
+                  <td><span id="zip"></span></td>
                 </tr>
               </tbody>
             </table>
           </div>
           <form role="form">
-            <button type="button" class="btn btn-default center-block" >Edit</button>
+            <button type="button" id="edit" class="btn btn-default center-block" >Edit</button>
           </form>
         </div>
         <div class="col-md-2 column">

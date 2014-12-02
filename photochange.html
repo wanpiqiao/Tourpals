@@ -31,7 +31,7 @@
 </head>
 
 <body>
-<div id="register"></div>
+<div id="photochange"></div>
 <div class="container">
   <div class="row clearfix">
     <div class="col-md-12 column">
@@ -78,28 +78,30 @@
             </li>
             
           </ul>
-        </div>
-        
+        </div> 
       </nav>
       <h1><br/></h1>
       <div class="row clearfix">
-        <div class="col-md-3 column">
+        <div class="col-md-4 column">
         </div>
-        <div class="col-md-6 column">
-          <div role="form">
-            
-            
-            <div class="form-group">
-               <label for="exampleInputFile">File input</label><input type="file" id="exampleInputFile" />
-              <p class="help-block">
-                Upload your photo here.
-              </p>
+        <div class="col-md-5 column">     
+              <img alt="photo" width="300" height="300" style="margin-top: 20%" src="" class="img-rounded" />
+            <div class="form-group">  
+                <p class="help-block">
+                Click 'Upload' first, then click 'Finish'.
+                </p>
+               <form name="uploadForm" method="post" action="ImgUpload" enctype="multipart/form-data"> 
+               <input type="hidden" id="imgName" name="uploadName" value=""/>
+               <input type="hidden" name="page" value="photochange.html" />
+               <input type="hidden" id="uid" name="uid" value="" />
+               <input type="file" id="inputfile" name="uploadFile" />
+               <input style="margin:10px auto;" type="submit" value="upload"/> 
+               <a href="javascript:void(0);" id="default">Use default photo</a>
+               </form>  
             </div>
-            <button id="submit" class="btn btn-default">Submit</button>
-          </div>
+            <button id="return" class="btn btn-default">Return</button>
+            <button id="submit" class="btn btn-default">Finish</button>           
         </div>
-        <div class="col-md-3 column">
-      </div>
     </div>
   </div>
 </div>
